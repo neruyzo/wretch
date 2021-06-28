@@ -124,11 +124,11 @@ export declare class Wretcher {
     /**
      * Performs a get request.
      */
-    get(options?: WretcherOptions): ResponseChain & Promise<any>;
+    get(body?: any, options?: WretcherOptions): ResponseChain & Promise<any>;
     /**
      * Performs a delete request.
      */
-    delete(options?: WretcherOptions): ResponseChain & Promise<any>;
+    delete(body?: any, options?: WretcherOptions): ResponseChain & Promise<any>;
     /**
      * Performs a put request.
      */

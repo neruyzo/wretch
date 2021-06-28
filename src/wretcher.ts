@@ -212,14 +212,14 @@ export class Wretcher {
     /**
      * Performs a get request.
      */
-    get(options?: WretcherOptions) {
-        return this.method("GET", options)
+    get(body?: any, options?: WretcherOptions) {
+        return this.method("GET", options, body)
     }
     /**
      * Performs a delete request.
      */
-    delete(options?: WretcherOptions) {
-        return this.method("DELETE", options)
+    delete(body?: any, options?: WretcherOptions) {
+        return this.method("DELETE", options, body)
     }
     /**
      * Performs a put request.

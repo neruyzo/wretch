@@ -219,14 +219,14 @@ var Wretcher = /** @class */ (function () {
     /**
      * Performs a get request.
      */
-    Wretcher.prototype.get = function (options) {
-        return this.method("GET", options);
+    Wretcher.prototype.get = function (body, options) {
+        return this.method("GET", options, body);
     };
     /**
      * Performs a delete request.
      */
-    Wretcher.prototype.delete = function (options) {
-        return this.method("DELETE", options);
+    Wretcher.prototype.delete = function (body, options) {
+        return this.method("DELETE", options, body);
     };
     /**
      * Performs a put request.
